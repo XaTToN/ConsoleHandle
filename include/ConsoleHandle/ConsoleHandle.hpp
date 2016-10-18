@@ -18,21 +18,21 @@ public:
 /*--------------Set-Functions--------------*/
 	static const bool			SetConsoleWindowTitle(const std::string& title);
 	static const bool			SetConsoleWindowSize(const short& x, const short& y);
-	static void					ToggleFullScreen();
+	static void				ToggleFullScreen();
 	static const bool			SetConsoleFontSize(const short& x, const short& y);
 	static const bool			SetFontColor(const short& font, const short& bg);
 	static const bool			SetCursorPosition(const short& x, const short& y);
 	static const bool			ShowCursor(const bool& state);
-	static void					Wait(const int& ms_time);
+	static void				Wait(const int& ms_time);
 
 /*--------------Get-Functions--------------*/
 	static const std::string	GetConsoleWindowTitle();
 	static const s2tuple		GetConsoleWindowSize();
-	static const bool			IsFullScreenEnabled();
+	static const bool		IsFullScreenEnabled();
 	static const s2tuple		GetConsoleFontSize();
 	static const s3tuple		GetFontColor();
 	static const s2tuple		GetCursorPosition();
-	static const bool			IsCursorVisible();
+	static const bool		IsCursorVisible();
 
 /*--------------Opaque-Pointer-------------*/
 private:
